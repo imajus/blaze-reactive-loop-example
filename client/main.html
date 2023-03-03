@@ -1,0 +1,13 @@
+<body>
+  <h1>Blaze Tracker dependency loop example</h1>
+  {{> parent}}
+</body>
+
+<template name="parent">
+  <div>Parent template</div>
+  {{>child list=list}}
+</template>
+
+<template name="child">
+  <div>Child template</div>
+</template>
